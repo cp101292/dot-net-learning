@@ -45,6 +45,8 @@ public int Increment(int counter) => counter + 1;
 
 One `README.md` per problem folder (not per category). Write as a senior engineer's design-review notes: precise, opinionated, no filler. Suggested sections:
 
+Use Markdown tables for structured comparisons, tradeoffs, or other information that is easier to scan in columns. Include concise fenced code snippets when they clarify the demonstrated behavior or show the relevant usage. Use these formats wherever they improve readability and cleanliness; do not force them into sections where prose or lists are clearer.
+
 ```markdown
 # <Problem Name>
 
