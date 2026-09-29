@@ -19,7 +19,7 @@ Converts a described scenario into an organized, runnable C# example with docume
 3. **Document the question** — as a properly formatted comment at the top of the main C# file. See [documentation standards](./references/documentation-standards.md#1-the-question-comment).
 4. **Implement the simulation** — clear, readable code with precise (not verbose) what+why comments. See [documentation standards](./references/documentation-standards.md#2-code-comments).
 5. **Wire into root `Main`** — expose a single static entry method and call it from `Program.cs`. See [workflow](./references/workflow.md#5-wire-into-program-cs).
-6. **Write the concept README** — senior-developer-level notes (motive, why this approach, tradeoffs, in-depth points) for the problem folder. See [documentation standards](./references/documentation-standards.md#3-concept-readme).
+6. **Write the concept README** — senior-developer-level notes (motive, why this approach, tradeoffs, in-depth points) for the problem folder. Use tabular formats and fenced code snippets wherever they improve readability and clarity. See [documentation standards](./references/documentation-standards.md#3-concept-readme).
 7. **Build and run** — verify actual output matches expected behavior before telling the user it's done. See [workflow](./references/workflow.md#7-build-and-verify).
 
 Full step-by-step detail (including what "done" looks like for each step) lives in [references/workflow.md](./references/workflow.md).
