@@ -24,10 +24,14 @@ The sample uses the same `Microsoft.Extensions.DependencyInjection` container us
 
 ## Tradeoffs & Alternatives
 
-- A singleton minimizes repeated construction but introduces shared-state and concurrency obligations.
-- A transient avoids shared instance state but can create substantial allocation or resource churn if it owns expensive work.
-- A scoped lifetime naturally aligns request state and disposal, but code outside HTTP requests must create and dispose scopes explicitly.
-- Use `IDbContextFactory<TContext>` when context creation must be independent of an ambient request scope or multiple contexts are needed within one scope.
+## Tradeoffs & Alternatives
+
+| Lifetime / Alternative | Benefits | Tradeoffs / When to Use |
+|---|---|---|
+| **Singleton** | Minimizes repeated construction and provides one shared instance. | Introduces shared-state and concurrency obligations. Use for immutable or thread-safe services. |
+| **Transient** | Avoids shared instance state by creating a new instance for each resolution. | Can cause substantial allocation or resource churn when the service owns expensive work. |
+| **Scoped** | Aligns naturally with request-specific state and disposal boundaries. | Code running outside HTTP requests must create and dispose scopes explicitly. |
+| **`IDbContextFactory<TContext>`** | Allows context creation independently of an ambient request scope and supports creating multiple contexts within one scope. | Adds factory-based creation instead of relying directly on the scoped `DbContext` instance. Use when independent or multiple context instances are required. |
 
 ## Gotchas / Common Mistakes
 
