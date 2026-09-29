@@ -1,7 +1,6 @@
 ---
 name: problem-simulator
-description: 'Turn a described C#/.NET scenario into a runnable, well-documented simulation in this repo: capture the question as a code comment, implement a clean solution, wire it into Program.cs so it runs from the root Main, add a senior-level concept README, and build+run to verify before signoff. Use when the user describes a coding problem, interview question, bug scenario, or concept they want demonstrated/simulated in a .NET/C# workspace.'
-argument-hint: 'Describe the scenario/problem/concept to simulate'
+description: 'Turn a described C#/.NET scenario into a runnable, well-documented simulation in this repository. Use when a user wants a coding problem, interview question, bug scenario, or .NET/C# concept demonstrated in code.'
 ---
 
 # Problem Simulator

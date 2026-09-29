@@ -1,4 +1,4 @@
-# problem-simulator (personal skill)
+# problem-simulator (GitHub project skill)
 
 Turns a described C#/.NET scenario into a runnable, documented simulation inside your current workspace.
 
@@ -28,5 +28,5 @@ For a given scenario, this skill creates:
 
 ## Notes
 
-- This is a **personal** skill (stored under your user profile), so it's available in any workspace you open, not just one repo.
+- This project skill is stored in `.github/skills/problem-simulator/` and is available to agents working in this repository.
 - The skill adapts the category list in `folder-conventions.md` to whatever categories already exist in the target repo — it reuses folders rather than creating near-duplicates.
